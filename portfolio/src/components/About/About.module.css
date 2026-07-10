@@ -1,0 +1,388 @@
+.about {
+  position: relative;
+
+  margin-top: -60px;
+
+  padding: calc(8rem + 60px) 0 8rem;
+
+  overflow: hidden;
+}
+.container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.45rem 1rem;
+
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(18px);
+
+  color: #8b9fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heading h2{
+  margin-top: 1.5rem;
+
+  font-size: clamp(2.3rem,5vw,4rem);
+  line-height: 1.15;
+  font-weight: 800;
+
+  color: #ffffff;
+
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.content{
+  display:grid;
+  grid-template-columns:380px 1fr;
+  gap:4rem;
+  align-items:center;
+}
+
+/* ---------------- PROFILE CARD ---------------- */
+
+.profileCard{
+
+  position:relative;
+
+  padding:2.5rem;
+
+  border-radius:32px;
+
+  background:rgba(255,255,255,.05);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  backdrop-filter:blur(25px);
+
+  overflow:hidden;
+
+  transition:.4s ease;
+
+}
+
+.profileCard::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:-40%;
+
+  background:
+  radial-gradient(circle,
+  rgba(109,91,255,.22),
+  transparent 70%);
+
+  pointer-events:none;
+
+}
+
+.profileCard:hover{
+
+  transform:translateY(-8px);
+
+  border-color:rgba(139,159,255,.25);
+
+}
+
+.avatar{
+
+  width:95px;
+  height:95px;
+
+  border-radius:50%;
+
+  display:grid;
+  place-items:center;
+
+  margin-inline:auto;
+  margin-bottom:1.8rem;
+
+  font-size:2.2rem;
+
+  color:#8b9fff;
+
+  background:rgba(255,255,255,.06);
+
+  border:1px solid rgba(255,255,255,.08);
+
+}
+
+.profileCard h3{
+
+  color:#fff;
+
+  text-align:center;
+
+  font-size:1.6rem;
+
+}
+
+.profileCard p{
+
+  margin-top:.7rem;
+
+  text-align:center;
+
+  color:#9ea3b3;
+
+}
+
+.status{
+
+  margin-top:2rem;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:.7rem;
+
+  color:#fff;
+
+  font-size:.95rem;
+
+}
+
+.dot{
+
+  width:10px;
+  height:10px;
+
+  border-radius:50%;
+
+  background:#32d74b;
+
+  box-shadow:
+  0 0 10px #32d74b,
+  0 0 25px #32d74b;
+
+}
+
+/* ---------------- INFO ---------------- */
+
+.info{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:3rem;
+
+}
+
+.description{
+
+  font-size:1.08rem;
+
+  line-height:1.9;
+
+  color:#b8bcc8;
+
+}
+
+/* ---------------- STATS ---------------- */
+
+.stats{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:1rem;
+
+}
+
+.statCard{
+
+  padding:1.4rem;
+
+  border-radius:20px;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.06);
+
+  transition:.35s;
+
+}
+
+.statCard:hover{
+
+  transform:translateY(-5px);
+
+  border-color:rgba(139,159,255,.18);
+
+  background:rgba(255,255,255,.06);
+
+}
+
+.statCard h3{
+
+  color:#fff;
+
+  font-size:2rem;
+
+}
+
+.statCard span{
+
+  color:#9ea3b3;
+
+  font-size:.92rem;
+
+}
+
+/* ---------------- HIGHLIGHTS ---------------- */
+
+.highlights{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:1rem;
+
+}
+
+.highlight{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:.9rem;
+
+  padding:1rem 1.2rem;
+
+  border-radius:16px;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.05);
+
+  color:#ffffff;
+
+  transition:.3s;
+
+}
+
+.highlight svg{
+
+  color:#8b9fff;
+
+  font-size:1.1rem;
+
+}
+
+.highlight:hover{
+
+  transform:translateX(8px);
+
+  border-color:rgba(139,159,255,.18);
+
+  background:rgba(255,255,255,.06);
+
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:1100px){
+
+.content{
+
+grid-template-columns:1fr;
+
+}
+
+.profileCard{
+
+max-width:420px;
+
+margin-inline:auto;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about{
+
+padding:6rem 0;
+
+}
+
+.heading{
+
+margin-bottom:4rem;
+
+}
+
+.heading h2{
+
+font-size:2.4rem;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.highlights{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:520px){
+
+.profileCard{
+
+padding:2rem;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.description{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+.heading h2{
+
+font-size:2rem;
+
+}
+
+}

@@ -1,0 +1,58 @@
+@keyframes glow{
+
+0%{
+
+filter:drop-shadow(0 0 5px #5B8CFF);
+
+}
+
+50%{
+
+filter:drop-shadow(0 0 20px #00E7FF);
+
+}
+
+100%{
+
+filter:drop-shadow(0 0 5px #5B8CFF);
+
+}
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+@keyframes rotate{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}

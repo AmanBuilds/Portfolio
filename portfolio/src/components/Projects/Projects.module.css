@@ -1,0 +1,73 @@
+.projects {
+  padding: 8rem 0;
+}
+
+.container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+.grid{
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:2rem;
+
+  align-items:start;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+  margin-bottom: 3rem;
+}
+
+.filterBtn {
+  padding: 0.75rem 1.4rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+
+  cursor: pointer;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(255, 255, 255, 0.15);
+
+  color: var(--text-primary);
+}
+
+.active {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.featuredGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  margin-bottom: 3rem;
+}

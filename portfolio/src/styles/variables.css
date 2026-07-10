@@ -1,0 +1,34 @@
+:root {
+
+  /* Colors */
+
+  --bg: #050816;
+  --surface: rgba(255,255,255,.05);
+  --surface-hover: rgba(255,255,255,.08);
+
+  --primary: #5B8CFF;
+  --secondary: #00E7FF;
+  --accent: #A855F7;
+
+  --white: #FFFFFF;
+  --text: #E5E7EB;
+  --gray: #94A3B8;
+
+  /* Border */
+
+  --border: rgba(255,255,255,.08);
+
+  /* Shadow */
+
+  --shadow:
+      0 10px 40px rgba(0,0,0,.35);
+
+  /* Radius */
+
+  --radius:20px;
+
+  /* Container */
+
+  --container:1200px;
+
+}

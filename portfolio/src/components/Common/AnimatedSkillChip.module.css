@@ -1,0 +1,89 @@
+.chip {
+  --accent: #61dafb;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.04);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  overflow: visible;
+
+  cursor: pointer;
+
+  transition: .35s ease;
+}
+
+.chip:hover{
+    border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+
+    box-shadow:
+        0 0 30px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.iconArea{
+
+    position:relative;
+
+    width:22px;
+    height:22px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.baseIcon{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:1.2rem;
+
+    color:var(--accent);
+
+}
+
+.floatingIcon {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.45rem;
+  color: var(--accent);
+
+  pointer-events: none;
+
+  z-index: 10;
+
+  filter: drop-shadow(0 0 16px var(--accent));
+
+  will-change: transform, opacity;
+
+  translate: -50% -50%;
+}
+
+.chip span{
+
+    color:white;
+
+    font-weight:500;
+
+    white-space:nowrap;
+
+}
