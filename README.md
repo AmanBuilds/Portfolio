@@ -10,19 +10,19 @@ A modern, premium and fully responsive developer portfolio built using **React +
 
 ### Hero Section
 
-![Hero](./screenshots/hero.png)
+![Hero](./public/screenshots/hero.png)
 
 ---
 
 ### Projects Section
 
-![Projects](./screenshots/project.png)
+![Projects](./public/screenshots/project.png)
 
 ---
 
 ### Contact Section
 
-![Contact](./screenshots/contact.png)
+![Contact](./public/screenshots/contact.png)
 
 ---
 
