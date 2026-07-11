@@ -7,7 +7,8 @@
   align-items: center;
   gap: 12px;
 
-  padding: 14px 18px;
+  padding:clamp(.75rem,2vw,.9rem)
+        clamp(1rem,2vw,1.15rem);
 
   border-radius: 999px;
 
@@ -33,8 +34,8 @@
 
     position:relative;
 
-    width:22px;
-    height:22px;
+    width:clamp(20px,2vw,22px);
+    height:clamp(20px,2vw,22px);
 
     display:flex;
     justify-content:center;
@@ -82,8 +83,16 @@
 
     color:white;
 
-    font-weight:500;
+    font-size:clamp(.9rem,1vw,.95rem);
 
     white-space:nowrap;
+
+}
+
+@media (hover:none){
+
+    .floatingIcon{
+        display:none;
+    }
 
 }

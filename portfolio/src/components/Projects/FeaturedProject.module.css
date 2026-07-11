@@ -3,9 +3,8 @@
   grid-template-columns: 1.4fr 1fr;
   align-items: center;
 
-  gap: 3rem;
-
-  padding: 2rem;
+  padding:clamp(1.5rem,3vw,2rem);
+  gap:clamp(1.5rem,4vw,3rem);
 
   border-radius: 28px;
 
@@ -188,7 +187,7 @@ display:flex;
 
 align-items:center;
 
-gap:1rem;
+gap:clamp(.75rem,2vw,1rem);
 
 margin-top:1rem;
 
@@ -292,6 +291,23 @@ border-color:rgba(255,255,255,.15);
     padding:1.4rem;
     gap:1.5rem;
   }
+
+  .content{
+    text-align:center;
+}
+
+.techStack{
+    justify-content:center;
+}
+
+.actions{
+    justify-content:center;
+}
+
+.topRow{
+    flex-wrap:wrap;
+    gap:.8rem;
+}
 
   .title{
     font-size:2rem;
@@ -434,4 +450,8 @@ transition:transform .3s ease;
 
 transform:translateX(4px) translateY(-2px);
 
+}
+
+.addressBar{
+    display:none;
 }

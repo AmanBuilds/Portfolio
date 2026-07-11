@@ -1,6 +1,7 @@
 .footer {
-  padding: 3rem 1.5rem 2rem;
-  margin-top: 8rem;
+  padding:clamp(2.5rem,5vw,3rem) clamp(1rem,3vw,1.5rem) 2rem;
+
+  margin-top:clamp(6rem,8vw,8rem);
 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -14,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 2rem;
+  gap:clamp(1.5rem,3vw,2rem);
 
   padding-bottom: 2rem;
 }
@@ -109,31 +110,14 @@
     align-items: flex-start;
   }
 
-.backToTop {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-
-  padding: 0.9rem 1.4rem;
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-
-  background: rgba(255, 255, 255, 0.04);
-
-  color: var(--text-primary);
-
-  font: inherit;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  user-select: none;
-
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
 }
+
+@media (max-width:768px){
+
+    .backToTop{
+
+        align-self:center;
+
+    }
+
 }

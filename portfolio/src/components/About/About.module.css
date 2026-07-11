@@ -53,7 +53,7 @@
 .content{
   display:grid;
   grid-template-columns:380px 1fr;
-  gap:4rem;
+  gap:clamp(2rem,5vw,4rem);
   align-items:center;
 }
 
@@ -63,7 +63,7 @@
 
   position:relative;
 
-  padding:2.5rem;
+  padding:clamp(2rem,4vw,2.5rem);
 
   border-radius:32px;
 
@@ -191,7 +191,7 @@
 
 .description{
 
-  font-size:1.08rem;
+  font-size:clamp(1rem,1.2vw,1.08rem);
 
   line-height:1.9;
 
@@ -239,7 +239,7 @@
 
   color:#fff;
 
-  font-size:2rem;
+  font-size:clamp(1.6rem,2vw,2rem);
 
 }
 
@@ -271,7 +271,7 @@
 
   gap:.9rem;
 
-  padding:1rem 1.2rem;
+  padding:clamp(.9rem,2vw,1rem) clamp(1rem,2vw,1.2rem);
 
   border-radius:16px;
 
@@ -310,6 +310,7 @@
 .content{
 
 grid-template-columns:1fr;
+justify-items:center;
 
 }
 
@@ -325,6 +326,14 @@ margin-inline:auto;
 
 @media(max-width:768px){
 
+.info{
+
+    text-align:center;
+
+    width:100%;
+
+}
+
 .about{
 
 padding:6rem 0;
@@ -339,7 +348,7 @@ margin-bottom:4rem;
 
 .heading h2{
 
-font-size:2.4rem;
+font-size:2.1rem;
 
 }
 
@@ -352,6 +361,12 @@ grid-template-columns:repeat(2,1fr);
 .highlights{
 
 grid-template-columns:1fr;
+
+}
+
+.highlight{
+
+    justify-content:center;
 
 }
 

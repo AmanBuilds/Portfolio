@@ -1,5 +1,5 @@
 .section {
-  padding: 8rem 0;
+  padding:clamp(6rem,8vw,8rem) 0;
 }
 
 .heading {
@@ -43,7 +43,7 @@
 .grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:2rem;
+gap:clamp(1.5rem,3vw,2rem);
 }
 
 /* ---------- Tablet ---------- */

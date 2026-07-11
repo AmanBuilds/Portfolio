@@ -67,7 +67,7 @@ transform:scale(1.05);
 
   flex: 1;
 
-  padding: 1.5rem;
+  padding:clamp(1.2rem,2vw,1.5rem);
 
   gap: 1rem;
 }
@@ -101,7 +101,7 @@ transform:scale(1.05);
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size:clamp(1.3rem,2vw,1.5rem);
 
   font-weight: 700;
 
@@ -233,6 +233,11 @@ padding:1.2rem;
 
 font-size:1.3rem;
 
+}
+
+.actions{
+    flex-wrap:wrap;
+    gap:.8rem;
 }
 
 }

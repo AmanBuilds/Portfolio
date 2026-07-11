@@ -19,25 +19,25 @@ const StrengthCard = ({
      <Orbit icons={orbitIcons} />
 
       <div className={styles.left}>
-        <div className={styles.iconWrapper}>
-          <Icon className={styles.icon} />
-        </div>
+  <div className={styles.iconWrapper}>
+    <Icon className={styles.icon} />
+  </div>
 
-        <div className={styles.content}>
-          <h3>{title}</h3>
-          <p>{description}</p>
-        </div>
-      </div>
+  <div className={styles.content}>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </div>
 
-      <aside className={styles.right}>
-        {highlights.map((item) => (
-          <span key={item}>{item}</span>
-        ))}
-      
-        <div className={styles.arrow}>
-          <FiArrowUpRight />
-        </div>
-      </aside>
+  <div className={styles.tags}>
+    {highlights.map((item) => (
+      <span key={item}>{item}</span>
+    ))}
+  </div>
+</div>
+
+<div className={styles.arrow}>
+  <FiArrowUpRight />
+</div>
     </article>
   );
 };

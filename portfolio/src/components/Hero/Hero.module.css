@@ -264,6 +264,8 @@ transition:.5s;
 
 isolation: isolate;
 
+will-change:transform;
+
 }
 
 .imageBox img{
@@ -317,6 +319,8 @@ transparent 70%
   animation: rotate 25s linear infinite;
 
   z-index: 1;
+
+  will-change:transform;
 }
 
 .orbit::before {
@@ -678,6 +682,10 @@ outline-offset:5px;
     justify-content:center;
   }
 
+  .hero{
+    padding-top:8rem;
+  }
+
   .tag{
     font-size:clamp(1rem,1.4vw,1.375rem);
   }
@@ -707,7 +715,7 @@ outline-offset:5px;
   }
 
   .hero{
-    padding-top:8.5rem;
+    padding-top:8.25rem;
   }
 
   .subtitle{
