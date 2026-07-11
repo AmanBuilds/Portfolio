@@ -1,9 +1,9 @@
 .hero{
-    padding-top:90px;
+    padding-top:clamp(6.8rem,9vw,8rem);
 
     min-height:100vh;
 
-    padding-bottom:120px;
+    padding-bottom:clamp(5rem,8vw,7.5rem);
 
     display:flex;
 
@@ -24,7 +24,7 @@
 
     justify-content:space-between;
 
-    gap:5rem;
+    gap:clamp(2rem,5vw,5rem);
 
     position:relative;
 
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
 
-    padding-left: 20px;
+    padding-left:clamp(0rem,2vw,1.25rem);
 }
 
 .tag{
@@ -57,7 +57,7 @@
     display:flex;
     flex-direction:column;
 
-    font-size:92px;
+    font-size:clamp(2.8rem,7vw,5.75rem);
     font-weight:800;
 
     line-height: 1.06;
@@ -92,7 +92,7 @@
 }
 
 .subtitle{
-    font-size:42px;
+    font-size:clamp(1.5rem,3vw,2.625rem);
     font-weight:700;
     color:#fff;
 
@@ -123,7 +123,7 @@
 
     line-height:1.8;
 
-    font-size:22px;
+    font-size:clamp(1rem,1.5vw,1.375rem);
 
 }
 
@@ -145,9 +145,10 @@
 
   padding: 18px 36px;
 
-  border-radius: 999px;
+  padding:clamp(.9rem,2vw,1.1rem)
+        clamp(1.4rem,3vw,2.2rem);
 
-  font-size: 17px;
+  font-size:clamp(.95rem,1.2vw,1.05rem);
   font-weight: 600;
 
   cursor: pointer;
@@ -247,9 +248,9 @@ background:rgba(91,140,255,.08);
 
 position:relative;
 
-width:500px;
+width:clamp(18rem,38vw,31.25rem);
 
-height:500px;
+height:clamp(18rem,38vw,31.25rem);
 
 display:flex;
 
@@ -418,8 +419,8 @@ animation:counterRotate 24s linear infinite;
         0 0 18px rgba(91,140,255,.08);
 
     transform:
-        rotate(var(--angle))
-        translateY(-260px);
+      rotate(var(--angle))
+      translateY(clamp(-170px,-22vw,-260px));
 
     transition:
         transform .35s cubic-bezier(.22,1,.36,1),
@@ -431,9 +432,9 @@ animation:counterRotate 24s linear infinite;
 .techIcon:hover{
 
     transform:
-        rotate(var(--angle))
-        translateY(-260px)
-        scale(1.08);
+    rotate(var(--angle))
+    translateY(clamp(-170px,-22vw,-260px))
+    scale(1.08);
 
     border-color:
         rgba(91,140,255,.35);
@@ -607,7 +608,7 @@ outline-offset:5px;
 @media (max-width: 1200px) {
 
   .wrapper{
-    gap:3rem;
+    gap:2.2rem;
   }
 
   .title{
@@ -625,14 +626,6 @@ outline-offset:5px;
   .imageBox{
     width:420px;
     height:420px;
-  }
-
-  .techIcon{
-    transform: rotate(var(--angle)) translateY(-220px);
-  }
-
-  .techIcon:hover{
-    transform: rotate(var(--angle)) translateY(-220px) scale(1.08);
   }
 
 }
@@ -686,24 +679,20 @@ outline-offset:5px;
   }
 
   .tag{
-    font-size:18px;
+    font-size:clamp(1rem,1.4vw,1.375rem);
   }
 
   .description{
     font-size:18px;
   }
 
+  .hero{
+    padding-top:9rem;
+  }
+
   .imageBox{
     width:320px;
     height:320px;
-  }
-
-  .techIcon{
-    transform: rotate(var(--angle)) translateY(-170px);
-  }
-
-  .techIcon:hover{
-    transform: rotate(var(--angle)) translateY(-170px) scale(1.08);
   }
 
 }
@@ -715,6 +704,10 @@ outline-offset:5px;
 
   .title{
     font-size:44px;
+  }
+
+  .hero{
+    padding-top:8.5rem;
   }
 
   .subtitle{
